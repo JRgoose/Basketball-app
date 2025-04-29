@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="index.css" />
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="scoreboard">
+    <h2 class="brand">Scoreboard</h2>
+
+
+    <div class="screen-container">
+      <img id="screen-image" src="images/blogo.webp" alt="Scoreboard Display" class="screen-image" />
+    </div>
+    <div id="timer" class="timer-digits">12:00</div>
+
+
+    <div class="possession-row">
+      <div class="poss-label" onclick="setPossession('home')" id="poss-home">
+        <span class="poss-text">POSS</span>
+      </div>
+      <div id="possession-indicator">🏀</div>
+      <div class="poss-label" onclick="setPossession('guest')" id="poss-guest">
+        <span class="poss-text">POSS</span>
+      </div>
+    </div>
+
+
+    <div class="score-row">
+      
+
+      <div class="score-column">
+        <div class="score-label">HOME</div>
+        <div id="home-score" class="score-digits">0</div>
+        <div class="button-group">
+          <div class="add-point-label">ADD POINT</div>
+          <div class="button-row">
+            <button class="add-btn" onclick="addHome(1)">+1</button>
+            <button class="add-btn" onclick="addHome(2)">+2</button>
+            <button class="add-btn" onclick="addHome(3)">+3</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="controls-column">
+        <button id="start-btn" onclick="startTimer()">START GAME</button>
+        <button id="stop-btn" onclick="togglePause()" data-state="pause">PAUSE</button>
+      </div>
+
+
+      <div class="score-column">
+        <div class="score-label">GUEST</div>
+        <div id="guest-score" class="score-digits">0</div>
+        <div class="button-group">
+          <div class="add-point-label">ADD POINT</div>
+          <div class="button-row">
+            <button class="add-btn" onclick="addGuest(1)">+1</button>
+            <button class="add-btn" onclick="addGuest(2)">+2</button>
+            <button class="add-btn" onclick="addGuest(3)">+3</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="reset-container">
+      <button id="reset-btn" onclick="resetScores()">RESET</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
