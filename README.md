@@ -56,9 +56,8 @@ The layout is inspired by modern sports arenas and features fully responsive int
 
 ### 📁 File Structure
 
-📁 Basketball-app/ 
-├── gifs/ → Basketball-themed animated assets 
-├── images/ → Static images (e.g., logo, scoreboard art) 
-├── index.html → Main HTML structure 
-├── index.css → Styling for the layout and responsiveness 
-├── index.js → Core logic for timing, scoring, and interactivity
+- gifs/ → Basketball-themed animated assets <br>
+- images/ → Static images (e.g., logo, scoreboard art) <br> 
+- index.html → Main HTML structure <br>
+- index.css → Styling for the layout and responsiveness <br>
+- index.js → Core logic for timing, scoring, and interactivity
